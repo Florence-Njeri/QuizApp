@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background=" #C71585"
+    tools:context=".MainActivity"
+   >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--Question One-->
+        <LinearLayout
+            style="@style/TextStyle"
+            android:background="@drawable/view_background"
+            android:orientation="vertical">
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/latest_android_version" />
+
+        <EditText
+            android:id="@+id/android_version_edit_text"
+            style="@style/TextStyle"
+            android:hint="@string/your_answer"
+            android:inputType="text" />
+        </LinearLayout>
+
+<!--Question Two-->
+    <LinearLayout
+        style="@style/TextStyle"
+        android:background="@drawable/view_background"
+        android:orientation="vertical">
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/common_android_intents" />
+
+        <CheckBox
+            android:id="@+id/alarm_intent"
+            style="@style/TextStyle"
+            android:text="@string/alarm" />
+
+        <CheckBox
+            android:id="@+id/games_intent"
+            style="@style/TextStyle"
+            android:text="@string/games" />
+
+        <CheckBox
+            android:id="@+id/contacts_intents"
+            style="@style/TextStyle"
+            android:text="@string/contacts" />
+
+        <CheckBox
+            android:id="@+id/emails_intent"
+            style="@style/TextStyle"
+            android:text="@string/emails" />
+    </LinearLayout>
+
+        <!--Question three-->
+    <LinearLayout
+        style="@style/TextStyle"
+        android:background="@drawable/view_background"
+        android:orientation="vertical">
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/droids" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/yes"
+                style="@style/TextStyle"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/not_necessarily"
+                style="@style/TextStyle"
+                android:text="@string/no" />
+        </RadioGroup>
+    </LinearLayout>
+        <!--Question Four-->
+    <LinearLayout
+        style="@style/TextStyle"
+        android:background="@drawable/view_background"
+        android:orientation="vertical">
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/android_dialog_boxes" />
+
+        <CheckBox
+            android:id="@+id/alert_dialog"
+            style="@style/TextStyle"
+            android:text="@string/alert_dialog" />
+
+        <CheckBox
+            android:id="@+id/progress_dialog"
+            style="@style/TextStyle"
+            android:text="@string/progress_dialog" />
+
+        <CheckBox
+            android:id="@+id/time_picker_dialog"
+            style="@style/TextStyle"
+            android:text="@string/time_picker_dialog" />
+
+        <CheckBox
+            android:id="@+id/prompt_dialog"
+            style="@style/TextStyle"
+            android:text="@string/prompt_dialog" />
+    </LinearLayout>
+<!--Question Five-->
+    <LinearLayout
+        style="@style/TextStyle"
+        android:background="@drawable/view_background"
+        android:orientation="vertical">
+        <TextView
+            style="@style/TextStyle"
+            android:text="@string/data_storage_android" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/sqlite_storage"
+                style="@style/TextStyle"
+                android:text="@string/sqlite_storage" />
+
+            <RadioButton
+                android:id="@+id/shared_preference"
+                style="@style/TextStyle"
+                android:text="@string/shared_preference"
+                />
+
+            <RadioButton
+                android:id="@+id/local_cache"
+                style="@style/TextStyle"
+                android:text="@string/local_cache" />
+
+            <RadioButton
+                android:id="@+id/sql_database"
+                style="@style/TextStyle"
+                android:text="@string/sql_database" />
+
+        </RadioGroup>
+    </LinearLayout>
+        <Button
+            style="@style/TextStyle"
+            android:text="@string/submit"
+            android:onClick="submit"/>
+    </LinearLayout>
+
+
+</ScrollView>

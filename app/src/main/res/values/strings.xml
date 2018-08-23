@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <!--Splash Screen Resources-->
+    <string name="welcome"><b>Welcome to Quiz App</b></string>
+    <string name="smiley_emoji">Smiley emoji</string>
+
+    <!--Question one [EditText]-->
+    <string name="latest_android_version">1. What is the latest version of android called?</string>
+    <string name="your_answer">Your answer</string>
+
+    <!--Question two [With CheckBoxes]-->
+    <string name="common_android_intents">2. Which of these are common intents in android?</string>
+    <string name="alarm">Alarm</string>
+    <string name="games">Games</string>
+    <string name="contacts">Contacts</string>
+    <string name="emails">Emails</string>
+
+    <!--Question three [With Radio buttons]-->
+    <string name="droids">3. Are android phones called "/Droids/"?</string>
+    <string name="yes">Yes</string>
+    <string name="no">Not Necessarily</string>
+
+    <!--Question Four [With CheckBoxes]-->
+    <string name="android_dialog_boxes">4. Which of these are android dialog boxes?</string>
+    <string name="alert_dialog">Alert Dialog</string>
+    <string name="progress_dialog">Progress Dialog</string>
+    <string name="time_picker_dialog">Time Picker Dialog</string>
+    <string name="prompt_dialog">Prompt Dialog</string>
+
+    <!--Question Five [With RadioButtons]-->
+    <string name="data_storage_android">5. Which of these is not a form of data storage in android?</string>
+    <string name="sqlite_storage">SQLite Storage</string>
+    <string name="shared_preference">Shared Preference</string>
+    <string name="local_cache">Local Cache</string>
+    <string name="content_provider">Content Provider</string>
+    <string name="submit">Submit</string>
+    <string name="sql_database">SQL Database</string>
+    <string name="your_score_is">Your score is:</string>
+    <string name="reset">Reset</string>
+</resources>
