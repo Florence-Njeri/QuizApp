@@ -65,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
         RadioButton yes = findViewById(R.id.yes);
         if (notNecessarily.isChecked()) {
             testScore += 20;
-        } else {
+        }
+        if (yes.isChecked()) {
             testScore += 0;
             //If checkbox checked, set checkbox and background text color red
             yes.setBackgroundColor(Color.parseColor("#ff0000"));
@@ -135,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
         questionThree();
         questionFour();
         questionFive();
+        Toast.makeText(this, "Your score is: " + testScore, Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(this, ScoreDisplayActivity.class);
         intent.putExtra("testScoreVariable", testScore);
         startActivity(intent);
